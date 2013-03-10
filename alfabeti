@@ -1,0 +1,10 @@
+public class Alfabeti {
+
+	public static void main(String[] args) {
+		char ch1 ;
+		ch1 = 97;
+
+		for (ch1 =97 ; ch1 <= 122; ch1++ )
+		System.out.print(ch1 + " ");
+	}
+}
