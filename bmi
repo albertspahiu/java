@@ -1,0 +1,33 @@
+import java.util.Scanner;
+public class BMI {
+	
+	public static void main(String[] args) {
+		
+        Scanner hyrjet = new Scanner(System.in);
+        double pesha, gjatesia, BMI;
+
+        System.out.println("Pesha juaj ne kilogram: ");
+        pesha = hyrjet.nextDouble();
+        
+        System.out.println("Gjatsia juaj ne meter: ");
+        gjatesia = hyrjet.nextDouble();
+        
+        BMI = pesha/(gjatesia*gjatesia);
+        if(BMI<=18.5)
+        {
+        	System.out.print("Pesha juaj eshte " + BMI + " dhe eshte nen normales");
+        }
+        
+        else if((BMI>=18.5) && (BMI<=24.9))
+        {
+        	System.out.print("Pesha juaj eshte "+ BMI + " dhe eshte normale");
+        }
+        
+        else if (BMI>30)
+        {
+        	System.out.print("Obesitet");
+        }
+       
+	}
+
+}
