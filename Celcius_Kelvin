@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class C2K {
+	
+	public static void main(String[] args) {
+		
+		double c;
+		double k;
+		
+		Scanner hyrje = new Scanner(System.in);
+		
+		System.out.print( "Temperatura ne Celcius: ");
+		c = hyrje.nextDouble();
+
+	    k = c + 273.15;
+
+		System.out.print("Temperatura Kelvin është: ");
+		System.out.print(k);
+	}
+}
