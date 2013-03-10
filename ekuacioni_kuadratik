@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class EkuacioniKuadratik {
+
+	public static void main(String[] args) {
+		
+    double a,b,c,d,x1,x2;
+		
+    Scanner hyrje = new Scanner (System.in);
+	
+		System.out.print("Jepni vleren e a: ");
+		a = hyrje.nextDouble();
+		System.out.print("Jepni vleren e b: ");
+		b = hyrje.nextDouble();
+		System.out.print("Jepni vleren e c: ");
+		c = hyrje.nextDouble();
+	
+		d = Math.sqrt(b*b-4*a*c);
+	
+		x1 = (-b+d)/2*a;
+		x2 = (-b-d)/2*a;
+	
+		System.out.println("x1= "+x1+"; x2="+x2);
+	}
+}
